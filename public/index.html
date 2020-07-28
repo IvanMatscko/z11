@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Z11 ГЛАВНАЯ</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/jquery.jscrollpane.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/jquery.modal.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/result.css">
+  <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+
+<div id="modalW" class="modal modal-wait">
+  <p class="title">В разработке</p>
+  <a href="#" class="closeBtn" rel="modal:close">Жду</a>
+</div>
+
+<div id="modalT" class="modal">
+  <p class="titleTwo">ПОЛЬЗОВАТЕЛЬСКОЕ СОГЛАШЕНИЕ <span class="right">редакция от 20.20.20202</span></p>
+  <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.</p>
+  <p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу показывает, как много веб-страниц всё ещё дожидаются своего настоящего рождения. За прошедшие годы текст Lorem Ipsum получил много версий. Некоторые версии появились по ошибке, некоторые - намеренно (например, юмористические варианты).</p>
+  <p>Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов в Lorem Ipsum, "consectetur", и занялся его поисками в классической латинской литературе. В результате он нашёл неоспоримый первоисточник Lorem Ipsum в разделах 1.10.32 и 1.10.33 книги "de Finibus Bonorum et Malorum" ("О пределах добра и зла"), написанной Цицероном в 45 году н.э. Этот трактат по теории этики был очень популярен в эпоху Возрождения. Первая строка Lorem Ipsum, "Lorem ipsum dolor sit amet..", происходит от одной из строк в разделе 1.10.32</p>
+  <p>Классический текст Lorem Ipsum, используемый с XVI века, приведён ниже. Также даны разделы 1.10.32 и 1.10.33 "de Finibus Bonorum et Malorum" Цицерона и их английский перевод, сделанный H. Rackham, 1914 год.</p>
+  <p>Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь. Если вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите какой-нибудь шутки, скрытой в середине абзаца. Также все другие известные генераторы Lorem Ipsum используют один и тот же текст, который они просто повторяют, пока не достигнут нужный объём. Это делает предлагаемый здесь генератор единственным настоящим Lorem Ipsum генератором.</p>
+</div>
+
+
+
+<header>
+  <div class="container">
+   
+    <div class="nameSite">
+      <a href="" class="logo">
+        <img class="d-only" src="img/Z11-logo-dark.png" alt="">
+        <img class="l-only" src="img/Z11-logo-light.png" alt="">
+      </a>
+    </div>
+   
+    <div class="game-menu">
+      <ul class="clearfix">
+        <li>
+          <a href="#modalW" rel="modal:open" class="csLink">
+            <img class="l-only" src="img/csgo-icon-gr.png" alt="">
+            <img class="d-only" src="img/csgo-icon-dark.png" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="#" class="dotaLink">
+            <img class="l-only" src="img/dota-icon-white.png" alt="">
+            <img class="d-only" src="img/dota-icon-red.png" alt="">
+          </a>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="header-menu btns-second clerfix">
+      <ul class="clearfix">
+        <li class="info-item btn-sec mob-none"><a href="">Косплей</a></li>
+        <li class="info-item btn-sec"><a href="">Новости</a></li>
+      </ul>
+    </div>
+    
+    <div class="sound-switch">
+      <label class="switch" for="switchM">
+        <input type="checkbox" id="switchM"/>
+        <div class="slider round"></div>
+      </label>
+    </div>
+    
+    <div class="theme-switch">
+      <label class="switch" for="switch">
+        <input type="checkbox" id="switch"/>
+        <div class="slider round"></div>
+      </label>
+    </div>
+    
+    <div class="header-search">
+      <div class="form-search-h">
+        <form action="">
+          <div class="input-div">
+            <input class="input" type="text" placeholder="Найти команду/игрока/героя">
+            <input class="btn" type="button">
+          </div>
+        </form>
+      </div>
+    </div>
+    
+    <div class="header-menu clerfix">
+      <ul class="clearfix">
+        <li class="lang-menu">
+          <div class="current-lang"><img src="img/flag-3.png" alt=""></div>
+          <ul class="drop-langs">
+            <li><a href=""><img src="img/flag-2.png" alt=""></a></li>
+            <li><a href=""><img src="img/flag-2.png" alt=""></a></li>
+          </ul>
+        </li>
+        <li class="info-item"><a href="page-commands.html">Команда</a></li>
+        <li class="info-item"><a href="page-player.html">Игрок</a></li>
+        <li class="info-item"><a href="page-tour.html">Турнир</a></li>
+      </ul>
+    </div>
+    
+    <div class="mobile-menu-btn" onclick="iconFunction(this)"> 
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+    
+    <div class="mobile-menu">
+      <ul>
+        <li class="info-item btn-sec"><a href="">Косплей</a></li>
+        <li class="info-item"><a href="page-commands.html">Команда</a></li>
+        <li class="info-item"><a href="page-player.html">Игрок</a></li>
+        <li class="info-item"><a href="page-tour.html">Турнир</a></li>
+        <li class="lang-menu">
+          <div class="current-lang"><img src="img/flag-3.png" alt=""></div>
+          <ul class="drop-langs">
+            <li><a href=""><img src="img/flag-2.png" alt=""></a></li>
+            <li><a href=""><img src="img/flag-2.png" alt=""></a></li>
+          </ul>
+        </li>
+        <li class="theme-mob">
+          <label class="switch" for="switch-mob">
+            <input type="checkbox" id="switch-mob"/>
+            <div class="slider round"></div>
+          </label>
+        </li>
+        <li>
+          <div class="sound-switch sound-mob">
+           <label class="switch" for="switchM-mob">
+            <input type="checkbox" id="switchM-mob"/>
+            <div class="slider round"></div>
+          </label>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+ 
+ 
+<div class="content">
+
+<div class="side-container">
+  <div class="side-online">
+
+  <a href="results.html" class="result-Btn">Все результаты</a>
+
+  <div class="menu-side-v2">
+    <ul>
+      <li class="active link-chat"><a href="#">чат</a></li>  
+      <li class="link-last"><a href="#">прошедшие</a></li>  
+    </ul>
+  </div>
+    
+  <div class="box-shadow">
+    <ul class="listMess">
+      <li>
+        <span class="time">18:09</span> <span class="user">Пользователь 1</span>
+        <p>Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+      </li>
+      <li>
+        <span class="time">18:09</span> <span class="user">Администратор</span>
+        <p>В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.</p>
+      </li>
+      <li>
+        <span class="time">18:09</span> <span class="user">Пользователь 2</span>
+        <p>Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.</p>
+      </li>
+      <li>
+        <span class="time">18:09</span> <span class="user">Пользователь 3</span>
+        <p>В то время некий безымянный печатник создал большую коллекцию размер</p>
+      </li>
+      <li>
+        <span class="time">18:09</span> <span class="user">Пользователь 2</span>
+        <p>Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.</p>
+      </li>
+      <li>
+        <span class="time">18:09</span> <span class="user">Пользователь 3</span>
+        <p>В то время некий безымянный печатник создал большую коллекцию размер</p>
+      </li>
+      <li>
+        <span class="time">18:09</span> <span class="user">Пользователь 2</span>
+        <p>Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.</p>
+      </li>
+      <li>
+        <span class="time">18:09</span> <span class="user">Пользователь 2</span>
+        <p>Lorem Ipsum не только успешно пережил без заметных изменений пять веков.</p>
+      </li>
+      <li>
+        <span class="time">18:09</span> <span class="user">Пользователь 1</span>
+        <p>Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века.</p>
+      </li>
+      <li>
+        <span class="time">18:09</span> <span class="user">Администратор</span>
+        <p>В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов.</p>
+      </li>
+      <li>
+        <span class="time">18:09</span> <span class="user">Пользователь 2</span>
+        <p>Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.</p>
+      </li>
+      <li>
+        <span class="time">18:09</span> <span class="user">Пользователь 3</span>
+        <p>В то время некий безымянный печатник создал большую коллекцию размер</p>
+      </li>
+      <li>
+        <span class="time">18:09</span> <span class="user">Пользователь 2</span>
+        <p>Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.</p>
+      </li>
+      <li>
+        <span class="time">18:09</span> <span class="user">Пользователь 3</span>
+        <p>В то время некий безымянный печатник создал большую коллекцию размер</p>
+      </li>
+      <li>
+        <span class="time">18:09</span> <span class="user">Пользователь 2</span>
+        <p>Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.</p>
+      </li>
+      <li>
+        <span class="time">18:09</span> <span class="user">Пользователь 2</span>
+        <p>Lorem Ipsum не только успешно пережил без заметных изменений пять веков.</p>
+      </li>
+    </ul>
+    
+    
+    <form class="login-form" action="">
+      <div class="inputs">
+        <input type="text" class="input" placeholder="Ваш логин">
+        <input type="text" class="input" placeholder="Ваш Email:">
+      </div>
+      <input type="submit" class="submit" value="Вход">
+    </form>
+    
+    
+    <ul class="match-list-info">
+      <li class="last">
+        <div class="match-item">
+          <div class="leftTeam">
+            <span class="nameTeam">Sparking Arrow Gaming</span>
+            <div class="imgTeam">
+              <img src="img/team/team1.png" alt="">
+            </div>
+          </div>
+          <div class="centerTime">
+            <span class="countTeam">2:3</span>
+            <span class="ligaTeam"><a href=""><img src="img/liga-img.png" alt=""></a></span>
+          </div>
+          <div class="rightTeam win">
+            <span class="nameTeam">Team <br> Honor</span>
+            <div class="imgTeam">
+              <img src="img/team/team2.png" alt="">
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="last open">
+        <div class="match-item">
+          <div class="leftTeam">
+            <span class="nameTeam">Sparking Arrow Gaming</span>
+            <div class="imgTeam">
+              <img src="img/team/team2.png" alt="">
+            </div>
+          </div>
+          <div class="centerTime">
+            <span class="countTeam">2:3</span>
+            <span class="ligaTeam"><a href=""><img src="img/liga-img.png" alt=""></a></span>
+          </div>
+          <div class="rightTeam win">
+            <span class="nameTeam">Team <br> Honor</span>
+            <div class="imgTeam">
+              <img src="img/team/team5.png" alt="">
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="last">
+        <div class="match-item">
+          <div class="leftTeam win">
+            <span class="nameTeam">Sparking Arrow Gaming</span>
+            <div class="imgTeam">
+              <img src="img/team/team4.png" alt="">
+            </div>
+          </div>
+          <div class="centerTime">
+            <span class="countTeam">4:2</span>
+            <span class="ligaTeam"><a href=""><img src="img/liga4.png" alt=""></a></span>
+          </div>
+          <div class="rightTeam">
+            <span class="nameTeam">Team <br> Honor</span>
+            <div class="imgTeam">
+              <img src="img/team/team1.png" alt="">
+            </div>
+          </div>
+        </div>
+      </li>   
+      
+      <li class="last">
+        <div class="match-item">
+          <div class="leftTeam">
+            <span class="nameTeam">Sparking Arrow Gaming</span>
+            <div class="imgTeam">
+              <img src="img/team/team1.png" alt="">
+            </div>
+          </div>
+          <div class="centerTime">
+            <span class="countTeam">0:3</span>
+            <span class="ligaTeam"><a href=""><img src="img/liga3.jpeg" alt=""></a></span>
+          </div>
+          <div class="rightTeam win">
+            <span class="nameTeam">Team <br> Honor</span>
+            <div class="imgTeam">
+              <img src="img/team/team3.png" alt="">
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="last">
+        <div class="match-item">
+          <div class="leftTeam">
+            <span class="nameTeam">Sparking Arrow Gaming</span>
+            <div class="imgTeam">
+              <img src="img/team/team2.png" alt="">
+            </div>
+          </div>
+          <div class="centerTime">
+            <span class="countTeam">6:5</span>
+            <span class="ligaTeam"><a href=""><img src="img/liga5.png" alt=""></a></span>
+          </div>
+          <div class="rightTeam ">
+            <span class="nameTeam">Team <br> Honor</span>
+            <div class="imgTeam">
+              <img src="img/team/team6.png" alt="">
+            </div>
+          </div>
+        </div>
+      </li> 
+      
+      
+      
+    </ul>
+  
+  </div>
+    
+
+    
+  </div>
+  <div class="side-info">
+    
+    <a href="results.html" class="result-Btn">Полное расписание</a>
+    
+    <div class="menu-side-v2">
+      <ul>
+        <li class="link-live active"><a href="#">лайв</a></li>  
+        <li class="link-future "><a href="#">будущие</a></li> 
+      </ul>
+    </div>
+    
+    <ul class="match-list-info">
+      
+      
+      <li class="live open">
+        <div class="match-item">
+          <div class="leftTeam">
+            <span class="nameTeam">Sparking Arrow Gaming</span>
+            <div class="imgTeam">
+              <img src="img/team/team1.png" alt="">
+            </div>
+            <ul class="shields">
+              <li class="green">fb</li>
+              <li class="grey">10</li>
+              <li class="red">r</li>
+            </ul>
+          </div>
+          <div class="centerTime">
+            <span class="timeTeam">11:27</span>
+            <span class="points a-right">+3000</span>
+          </div>
+          <div class="rightTeam win">
+            <span class="nameTeam">Team <br> Honor</span>
+            <div class="imgTeam">
+              <img src="img/team/team5.png" alt="">
+            </div>
+            <ul class="shields">
+              <li class="green">fb</li>
+              <li class="grey">10</li>
+              <li class="red">r</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      
+      
+      <li class="live open">
+        <div class="match-item">
+          <div class="leftTeam win">
+            <span class="nameTeam">Sparking Arrow Gaming</span>
+            <div class="imgTeam">
+              <img src="img/team/team6.png" alt="">
+            </div>
+            <ul class="shields">
+              <li class="green">fb</li>
+              <li class="grey">10</li>
+              <li class="red">r</li>
+            </ul>
+          </div>
+          <div class="centerTime">
+            <span class="timeTeam">11:27</span>
+            <span class="points a-right">+3000</span>
+          </div>
+          <div class="rightTeam ">
+            <span class="nameTeam">Team <br> Honor</span>
+            <div class="imgTeam">
+              <img src="img/team/team7.png" alt="">
+            </div>
+            <ul class="shields">
+              <li class="green">fb</li>
+              <li class="grey">10</li>
+              <li class="red">r</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      
+      <li class="live open">
+        <div class="match-item">
+          <div class="leftTeam">
+            <span class="nameTeam">Sparking Arrow Gaming</span>
+            <div class="imgTeam">
+              <img src="img/team/team3.png" alt="">
+            </div>
+            <ul class="shields">
+              <li class="green">fb</li>
+            </ul>
+          </div>
+          <div class="centerTime">
+            <span class="timeTeam">11:27</span>
+            <span class="points a-right">+3000</span>
+          </div>
+          <div class="rightTeam win">
+            <span class="nameTeam">Team <br> Honor</span>
+            <div class="imgTeam">
+              <img src="img/team/team4.png" alt="">
+            </div>
+            <ul class="shields">
+              <li class="green">fb</li>
+              <li class="grey">10</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      
+      <li class="live open">
+        <div class="match-item">
+          <div class="leftTeam win">
+            <span class="nameTeam">Sparking Arrow Gaming</span>
+            <div class="imgTeam">
+              <img src="img/team/team7.png" alt="">
+            </div>
+            <ul class="shields">
+              <li class="green">fb</li>
+              <li class="grey">10</li>
+              <li class="red">r</li>
+            </ul>
+          </div>
+          <div class="centerTime">
+            <span class="timeTeam">11:27</span>
+            <span class="points a-right">+3000</span>
+          </div>
+          <div class="rightTeam ">
+            <span class="nameTeam">Team <br> Honor</span>
+            <div class="imgTeam">
+              <img src="img/team/team1.png" alt="">
+            </div>
+            <ul class="shields">
+              <li class="green">fb</li>
+              <li class="grey">10</li>
+              <li class="red">r</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      
+      <li class="live open">
+        <div class="match-item">
+          <div class="leftTeam">
+            <span class="nameTeam">Sparking Arrow Gaming</span>
+            <div class="imgTeam">
+              <img src="img/team/team1.png" alt="">
+            </div>
+            <ul class="shields">
+              <li class="green">fb</li>
+              <li class="grey">10</li>
+              <li class="red">r</li>
+            </ul>
+          </div>
+          <div class="centerTime">
+            <span class="timeTeam">11:27</span>
+            <span class="points a-right">+3000</span>
+          </div>
+          <div class="rightTeam win">
+            <span class="nameTeam">Team <br> Honor</span>
+            <div class="imgTeam">
+              <img src="img/team/team6.png" alt="">
+            </div>
+            <ul class="shields">
+              <li class="green">fb</li>
+              <li class="grey">10</li>
+              <li class="red">r</li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      
+      <li class="future">
+        <div class="match-item">
+          <div class="leftTeam">
+            <span class="nameTeam">Sparking Arrow Gaming</span>
+            <div class="imgTeam">
+              <img src="img/team/team6.png" alt="">
+            </div>
+          </div>
+          <div class="centerTime">
+            <span class="infoTeam">
+              <span class="time">11:33</span>
+              <span class="day">08.12</span>
+            </span>
+            <span class="ligaTeam"><a href=""><img src="img/liga2-img.png" alt=""></a></span>
+          </div>
+          <div class="rightTeam">
+            <span class="nameTeam">Team <br> Honor</span>
+            <div class="imgTeam">
+              <img src="img/team/team3.png" alt="">
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="future">
+        <div class="match-item">
+          <div class="leftTeam">
+            <span class="nameTeam">Sparking Arrow Gaming</span>
+            <div class="imgTeam">
+              <img src="img/team/team7.png" alt="">
+            </div>
+          </div>
+          <div class="centerTime">
+            <span class="infoTeam">
+              <span class="time">03:12</span>
+              <span class="day">10.12</span>
+            </span>
+            <span class="ligaTeam"><a href=""><img src="img/liga-img.png" alt=""></a></span>
+          </div>
+          <div class="rightTeam">
+            <span class="nameTeam">Team <br> Honor</span>
+            <div class="imgTeam">
+              <img src="img/team/team4.png" alt="">
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="future">
+        <div class="match-item">
+          <div class="leftTeam">
+            <span class="nameTeam">Sparking Arrow Gaming</span>
+            <div class="imgTeam">
+              <img src="img/team/team2.png" alt="">
+            </div>
+          </div>
+          <div class="centerTime">
+            <span class="infoTeam">
+              <span class="time">10:10</span>
+              <span class="day">11.12</span>
+            </span>
+            <span class="ligaTeam"><a href=""><img src="img/liga-img.png" alt=""></a></span>
+          </div>
+          <div class="rightTeam">
+            <span class="nameTeam">Team <br> Honor</span>
+            <div class="imgTeam">
+              <img src="img/team/team5.png" alt="">
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="future">
+        <div class="match-item">
+          <div class="leftTeam">
+            <span class="nameTeam">Sparking Arrow Gaming</span>
+            <div class="imgTeam">
+              <img src="img/team/team1.png" alt="">
+            </div>
+          </div>
+          <div class="centerTime">
+            <span class="infoTeam">
+              <span class="time">01:55</span>
+              <span class="day">11.12</span>
+            </span>
+            <span class="ligaTeam"><a href=""><img src="img/liga3.jpeg" alt=""></a></span>
+          </div>
+          <div class="rightTeam">
+            <span class="nameTeam">Team <br> Honor</span>
+            <div class="imgTeam">
+              <img src="img/team/team6.png" alt="">
+            </div>
+          </div>
+        </div>
+      </li>
+      
+      <li class="future">
+        <div class="match-item">
+          <div class="leftTeam">
+            <span class="nameTeam">Sparking Arrow Gaming</span>
+            <div class="imgTeam">
+              <img src="img/team/team4.png" alt="">
+            </div>
+          </div>
+          <div class="centerTime">
+            <span class="infoTeam">
+              <span class="time">07:30</span>
+              <span class="day">15.12</span>
+            </span>
+            <span class="ligaTeam"><a href=""><img src="img/liga4.png" alt=""></a></span>
+          </div>
+          <div class="rightTeam">
+            <span class="nameTeam">Team <br> Honor</span>
+            <div class="imgTeam">
+              <img src="img/team/team2.png" alt="">
+            </div>
+          </div>
+        </div>
+      </li>
+      
+     
+      
+    </ul>
+  </div>
+</div>  
+
+
+  <div class="side-rate">
+  
+  <div class="side-rate-item rate-header">
+    <a href="" class="logoB">
+      <img class="l-only" src="img/gbet.png" alt="">
+      <img class="d-only" src="img/gbet-dark.png" alt="">
+    </a>
+    <p class="textR">лучшие</p>
+    <a href="" class="logoR">
+      <img class="l-only" src="img/ggbet-logo-1.png" alt="">
+      <img class="d-only" src="img/ggbet-logo-dark.png" alt="">
+    </a>
+    <div class="leftCof"><span>3.5</span></div>
+    <div class="rightCof"><span>12.05</span></div>
+  </div>
+  
+  <div class="match-open">
+      <div class="match-header">
+       
+        <div class="leftTeam">
+          <div class="teamImg">
+            <img src="img/team/team1.png" alt="">
+          </div>
+          <span class="data">11</span>
+        </div>
+        
+        <div class="centerTime"><span class="timeTeam">11:27</span></div>
+        
+        <div class="rightTeam">
+          <span class="data">7 <i>+5400</i></span>
+          <ul class="list-shields">
+            <li class="green">fb</li>
+            <li class="grey">10</li>
+            <li class="red">r</li>
+          </ul>
+          
+          <div class="teamImg">
+            <img src="img/team/team2.png" alt="">
+          </div>
+        </div>
+        
+      </div>
+      
+      <div class="match-details">
+        <div class="leftTeam">
+          <ul>
+           
+            <li>
+              <p><a href="" class="namePl">Epileptik1d</a></p>
+              <div class="heroImg">
+                <a href=""><img src="img/heroes/hero1.png" alt=""></a>
+              </div>
+              <div class="dopInfo">
+                <ul class="listG">
+                  <li class="g">1</li>
+                  <li class="b">5</li>
+                  <li class="r">12</li>
+                </ul>
+                <span class="coins">19500</span>
+              </div>
+              <span class="ellipse">18</span>
+            </li>
+            
+            <li>
+              <p><a href="" class="namePl">No[o]n</a></p>
+              <div class="heroImg">
+                <a href=""><img src="img/heroes/hero2.png" alt=""></a>
+              </div>
+              <div class="dopInfo">
+                <ul class="listG">
+                  <li class="g">0</li>
+                  <li class="b">10</li>
+                  <li class="r">15</li>
+                </ul>
+                <span class="coins">12150</span>
+              </div>
+              <span class="ellipse">18</span>
+            </li>
+            
+            <li>
+              <p><a href="" class="namePl">Revolution</a></p>
+              <div class="heroImg">
+                <a href=""><img src="img/heroes/hero3.png" alt=""></a>
+              </div>
+              <div class="dopInfo">
+                <ul class="listG">
+                  <li class="g">12</li>
+                  <li class="b">4</li>
+                  <li class="r">20</li>
+                </ul>
+                <span class="coins">9500</span>
+              </div>
+              <span class="ellipse">18</span>
+            </li>
+            
+            <li>
+              <p><a href="" class="namePl">Save-</a></p>
+              <div class="heroImg">
+                <a href=""><img src="img/heroes/hero4.png" alt=""></a>
+              </div>
+              <div class="dopInfo">
+                <ul class="listG">
+                  <li class="g">1</li>
+                  <li class="b">5</li>
+                  <li class="r">12</li>
+                </ul>
+                <span class="coins">1700</span>
+              </div>
+              <span class="ellipse">18</span>
+            </li>
+            
+            <li>
+              <p><a href="" class="namePl">Solo</a></p>
+              <div class="heroImg">
+                <a href=""><img src="img/heroes/hero5.png" alt=""></a>
+              </div>
+              <div class="dopInfo">
+                <ul class="listG">
+                  <li class="g">12</li>
+                  <li class="b">0</li>
+                  <li class="r">25</li>
+                </ul>
+                <span class="coins">540</span>
+              </div>
+              <span class="ellipse">18</span>
+            </li>
+            
+
+            
+          </ul>
+        </div>
+        
+        
+        <div class="centerDetails">
+          
+          <div class="graphDiv">
+            <img class="l-only" src="img/graph.png" alt="">
+            <img class="d-only" src="img/graph-dark.png" alt="">
+          </div>
+          
+          <div class="mapDiv">
+            <img src="img/map.png" alt="">
+          </div>
+        </div>
+        
+        
+        <div class="rightTeam">
+          <ul>
+            <li>
+              <p><a href="" class="namePl">Crystallize</a></p>
+              <div class="dopInfo">
+                <ul class="listG">
+                  <li class="g">5</li>
+                  <li class="b">7</li>
+                  <li class="r">12</li>
+                </ul>
+                <span class="coins">31200</span>
+              </div>
+              <div class="heroImg">
+                <a href=""><img src="img/heroes/hero6.png" alt=""></a>
+              </div>
+              <span class="ellipse">18</span>
+            </li>
+            
+            <li>
+              <p><a href="" class="namePl">Zayac</a></p>
+              <div class="dopInfo">
+                <ul class="listG">
+                  <li class="g">12</li>
+                  <li class="b">10</li>
+                  <li class="r">15</li>
+                </ul>
+                <span class="coins">15000</span>
+              </div>
+              <div class="heroImg">
+                <a href=""><img src="img/heroes/hero7.png" alt=""></a>
+              </div>
+              <span class="ellipse">18</span>
+            </li>
+            
+            <li>
+              <p><a href="" class="namePl">Magical</a></p>
+              <div class="dopInfo">
+                <ul class="listG">
+                  <li class="g">1</li>
+                  <li class="b">5</li>
+                  <li class="r">20</li>
+                </ul>
+                <span class="coins">12100</span>
+              </div>
+              <div class="heroImg">
+                <a href=""><img src="img/heroes/hero8.png" alt=""></a>
+              </div>
+              <span class="ellipse">18</span>
+            </li>
+            
+            <li>
+              <p><a href="" class="namePl">9pasha</a></p>
+              <div class="dopInfo">
+                <ul class="listG">
+                  <li class="g">1</li>
+                  <li class="b">0</li>
+                  <li class="r">4</li>
+                </ul>
+                <span class="coins">2580</span>
+              </div>
+              <div class="heroImg">
+                <a href=""><img src="img/heroes/hero9.png" alt=""></a>
+              </div>
+              <span class="ellipse">18</span>
+            </li>
+            
+            <li>
+              <p><a href="" class="namePl">Illias</a></p>
+              <div class="dopInfo">
+                <ul class="listG">
+                  <li class="g">4</li>
+                  <li class="b">8</li>
+                  <li class="r">11</li>
+                </ul>
+                <span class="coins">1810</span>
+              </div>
+              <div class="heroImg">
+                <a href=""><img src="img/heroes/hero10.png" alt=""></a>
+              </div>
+              <span class="ellipse">18</span>
+            </li>
+            
+          </ul>
+        </div>
+
+      </div> 
+      
+
+  </div>
+  
+
+      
+      
+  <div class="list-side">
+    <div class="side-rate-item">
+      <a href="" class="logoB">
+        <img class="l-only" src="img/gbet.png" alt="">
+        <img class="d-only" src="img/gbet-dark.png" alt="">
+      </a>
+
+      <p class="text">победа на карте</p>
+      <div class="leftCof"><span>3.5</span></div>
+      <div class="rightCof"><span>12.05</span></div>
+    </div>
+    
+    <div class="side-rate-item">
+      
+      <a href="" class="logoB">
+        <img class="l-only" src="img/pinnacle.png" alt="">
+        <img class="d-only" src="img/pinnacle-dark.png" alt="">
+      </a>
+
+      <p class="text">победа на карте</p>
+      <div class="leftCof"><span>3.5</span></div>
+      <div class="rightCof"><span>6.9</span></div>
+    </div>
+    
+    <div class="side-rate-item">
+      <a href="" class="logoB">
+        <img class="l-only" src="img/pari-logo.png" alt="">
+        <img class="d-only" src="img/pari-logo-dark.png" alt="">
+      </a>
+
+      <p class="text">победа на карте</p>
+      <div class="leftCof"><span>3.5</span></div>
+      <div class="rightCof"><span>3.5</span></div>
+    </div>
+  </div>
+    
+    
+    
+    
+  </div>
+  
+  
+  
+  
+  <div class="side-match">
+   
+    <div class="streem-div">
+      <iframe src="https://player.twitch.tv/?!allowfullscreen&amp;channel=dreamhackcs&amp;layout=video&amp;!autoplay&amp;playsinline&amp;muted&amp;origin=https%3A%2F%2Fgg.bet" width="100%" height="100%" frameborder="0" scrolling="no" allow="autoplay; fullscreen"></iframe>
+    </div>
+    
+    
+    <ul class="big-banner">
+      <li>
+        <a href="">
+          <img class="l-only" src="img/big-banner.png" alt="">
+          <img class="d-only" src="img/big-banner-dark.png" alt="">
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <img class="l-only" src="img/big-banner.png" alt="">
+          <img class="d-only" src="img/big-banner-dark.png" alt="">
+        </a>
+      </li>
+    </ul>
+    
+  </div>
+</div>
+ 
+<footer>
+  <div class="container clearfix">
+    <div class="logo-footer">
+      <a href="" class="logo">
+        <img class="d-only" src="img/Z11-logo-dark.png" alt="">
+        <img class="l-only" src="img/Z11-logo-light.png" alt="">
+      </a>
+    </div>
+    
+    <ul class="menu-footer clearfix">
+      <li class="active"><a href="">Главная</a></li>
+      <li><a href="">Инфо</a></li>
+      <li><a href="#modalT" rel="modal:open">Правила</a></li>
+    </ul>
+    
+    <ul class="footer-info">
+      <li class="li-f">Powered by <span class="red">EraSoft</span></li>
+      <li>Все права защищены <span class="green">(с)2020</span></li>
+      <li>
+        <p><span class="green"><i class="far fa-envelope"></i></span>Info@z11.live</p>
+        <p><span class="red"><i class="far fa-envelope"></i></span>admin@z11.live</p>
+      </li>
+      <li>
+        <p><span class="green">Design</span>: krisemka7@gmail.com</p>
+        <p><span class="red">Layout</span>: webden41k@gmail.com</p>
+      </li>
+    </ul>
+    
+  </div>
+</footer>
+ 
+  
+<script src="js/jquery-3.1.1.min.js"></script>  
+<script src="js/jquery.mousewheel.js"></script>  
+<script src="js/jquery.jscrollpane.min.js"></script>  
+<script src="js/slick.min.js"></script>  
+<script src="js/jquery.modal.min.js"></script>  
+<script src="js/script.js"></script>  
+<script type="text/javascript">
+
+    $('.side-online .listMess').jScrollPane({
+      showArrows: true,
+      arrowScrollOnHover: true,
+      verticalGutter: 0,
+      contentWidth: '0px'
+    });
+
+  
+  if($(window).width() < 1599) {
+    $(".side-online .menu-side-v2 li").removeClass("active");
+    $(".side-online .match-list-info li").removeClass("open");
+    $(".side-online").addClass("hide");
+    
+    $(".menu-side-v2 .link-live").click(function() {
+      $(".menu-side-v2 li").removeClass("active");
+      $(".side-online").addClass("hide");
+      $(".match-list-info .live").addClass("open");
+      $(".match-list-info .last").removeClass("open");
+      $(".match-list-info .future").removeClass("open");
+      $(this).addClass("active");
+    });
+
+    $(".menu-side-v2 .link-future").click(function() {
+      $(".menu-side-v2 li").removeClass("active");
+      $(".side-online").addClass("hide");
+      $(".match-list-info .future").addClass("open");
+      $(".match-list-info .last").removeClass("open");
+      $(".match-list-info .live").removeClass("open");
+      $(this).addClass("active");
+    });
+
+
+
+    $(".menu-side-v2 .link-chat").click(function() {
+      $(".menu-side-v2 li").removeClass("active");
+      $(".side-online").removeClass("hide");
+      $(this).addClass("active");
+      $(".match-list-info .future").removeClass("open");
+      $(".match-list-info .live").removeClass("open");
+    });
+
+
+    $(".menu-side-v2 .link-last").click(function() {
+      $(".menu-side-v2 li").removeClass("active");
+      $(".side-online").addClass("hide");
+      $(".side-online .box-shadow").show();
+      $(".match-list-info .last").addClass("open");
+      $(".match-list-info .future").removeClass("open");
+      $(".match-list-info .live").removeClass("open");
+      $(this).addClass("active");
+    });
+  } 
+</script>
+
+
+</body>
+</html>

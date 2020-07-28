@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Z11 Косплей</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/jquery.jscrollpane.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/jquery.modal.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/result.css">
+  <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+
+<div id="modalW" class="modal modal-wait">
+  <p class="title">В разработке</p>
+  <a href="#" class="closeBtn" rel="modal:close">Жду</a>
+</div>
+
+<div id="modalT" class="modal">
+  <p class="titleTwo">ПОЛЬЗОВАТЕЛЬСКОЕ СОГЛАШЕНИЕ <span class="right">редакция от 20.20.20202</span></p>
+  <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.</p>
+  <p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу показывает, как много веб-страниц всё ещё дожидаются своего настоящего рождения. За прошедшие годы текст Lorem Ipsum получил много версий. Некоторые версии появились по ошибке, некоторые - намеренно (например, юмористические варианты).</p>
+  <p>Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов в Lorem Ipsum, "consectetur", и занялся его поисками в классической латинской литературе. В результате он нашёл неоспоримый первоисточник Lorem Ipsum в разделах 1.10.32 и 1.10.33 книги "de Finibus Bonorum et Malorum" ("О пределах добра и зла"), написанной Цицероном в 45 году н.э. Этот трактат по теории этики был очень популярен в эпоху Возрождения. Первая строка Lorem Ipsum, "Lorem ipsum dolor sit amet..", происходит от одной из строк в разделе 1.10.32</p>
+  <p>Классический текст Lorem Ipsum, используемый с XVI века, приведён ниже. Также даны разделы 1.10.32 и 1.10.33 "de Finibus Bonorum et Malorum" Цицерона и их английский перевод, сделанный H. Rackham, 1914 год.</p>
+  <p>Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь. Если вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите какой-нибудь шутки, скрытой в середине абзаца. Также все другие известные генераторы Lorem Ipsum используют один и тот же текст, который они просто повторяют, пока не достигнут нужный объём. Это делает предлагаемый здесь генератор единственным настоящим Lorem Ipsum генератором.</p>
+</div>
+
+
+
+<header>
+  <div class="container">
+   
+    <div class="nameSite">
+      <a href="" class="logo">
+        <img class="d-only" src="img/Z11-logo-dark.png" alt="">
+        <img class="l-only" src="img/Z11-logo-light.png" alt="">
+      </a>
+    </div>
+   
+    <div class="game-menu">
+      <ul class="clearfix">
+        <li>
+          <a href="#modalW" rel="modal:open" class="csLink">
+            <img class="l-only" src="img/csgo-icon-gr.png" alt="">
+            <img class="d-only" src="img/csgo-icon-dark.png" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="#" class="dotaLink">
+            <img class="l-only" src="img/dota-icon-white.png" alt="">
+            <img class="d-only" src="img/dota-icon-red.png" alt="">
+          </a>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="theme-switch">
+      <label class="switch" for="switch">
+        <input type="checkbox" id="switch"/>
+        <div class="slider round"></div>
+      </label>
+    </div>
+    
+    <div class="header-search">
+      <div class="form-search-h">
+        <form action="">
+          <div class="input-div">
+            <input class="input" type="text" placeholder="Найти команду/игрока/героя">
+            <input class="btn" type="button">
+          </div>
+        </form>
+      </div>
+    </div>
+    
+    <div class="header-menu clerfix">
+      <ul class="clearfix">
+        <li class="info-item"><a href="page-commands.html">Команда</a></li>
+        <li class="info-item"><a href="page-player.html">Игрок</a></li>
+        <li class="info-item"><a href="page-tour.html">Турнир</a></li>
+        <li class="lang-menu">
+          <div class="current-lang"><img src="img/flag-3.png" alt=""></div>
+          <ul class="drop-langs">
+            <li><a href=""><img src="img/flag-2.png" alt=""></a></li>
+            <li><a href=""><img src="img/flag-2.png" alt=""></a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="mobile-menu-btn" onclick="iconFunction(this)"> 
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+    
+    <div class="mobile-menu">
+      <ul>
+        <li class="info-item"><a href="page-commands.html">Команда</a></li>
+        <li class="info-item"><a href="page-player.html">Игрок</a></li>
+        <li class="info-item"><a href="page-tour.html">Турнир</a></li>
+        <li class="lang-menu">
+          <div class="current-lang"><img src="img/flag-3.png" alt=""></div>
+          <ul class="drop-langs">
+            <li><a href=""><img src="img/flag-2.png" alt=""></a></li>
+            <li><a href=""><img src="img/flag-2.png" alt=""></a></li>
+          </ul>
+        </li>
+        <li class="theme-mob">
+          <label class="switch" for="switch-mob">
+            <input type="checkbox" id="switch-mob"/>
+            <div class="slider round"></div>
+          </label>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+ 
+ 
+<div class="content">
+  <div class="bg-cosplay cosplay-div">
+    <p class="title-cosplay"><span class="l-part">Новые</span> <span class="r-part">Лучшие</span></p>
+    <div class="cosplay-list-one">
+      <div class="item-cosplay">
+        <img class="img" src="img/cosplay-img-1.jpg" alt="">
+        <div class="marks">
+          <div class="like-count"><span>137</span></div>
+        </div>
+      </div>
+      <div class="item-cosplay">
+        <img  class="img" src="img/cosplay-img-1.jpg" alt="">
+        <div class="marks">
+          <div class="like-count"><span>137</span></div>
+        </div>
+      </div>
+      <div class="item-cosplay">
+        <img  class="img" src="img/cosplay-img-1.jpg" alt="">
+        <div class="marks">
+          <div class="like-count"><span>137</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+<!--
+  <div class="cosplay-top">
+    <div class="sm-cosplay cosplay-div">
+      <p class="title-cosplay">Лучшие за месяц</p>
+      <div class="cosplay-list-one">
+        <div class="item-cosplay">
+          <img class="img" src="img/cosplay-img-2.jpg" alt="">
+          <ul class="marks">
+            <li class="like"><span></span></li>
+            <li class="dislike"><span></span></li>
+          </ul>
+        </div>
+        <div class="item-cosplay">
+          <img  class="img" src="img/cosplay-img-2.jpg" alt="">
+          <ul class="marks">
+            <li class="like "><span></span></li>
+            <li class="dislike"><span></span></li>
+          </ul>
+        </div>
+        <div class="item-cosplay">
+          <img class="img" src="img/cosplay-img-2.jpg" alt="">
+          <ul class="marks">
+            <li class="like"><span></span></li>
+            <li class="dislike"><span></span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <div class="sm-cosplay cosplay-div">
+      <p class="title-cosplay">Лучшие за неделю</p>
+      <div class="cosplay-list-one">
+        <div class="item-cosplay">
+          <img class="img" src="img/cosplay-img-3.jpg" alt="">
+          <ul class="marks">
+            <li class="like active"><span></span></li>
+            <li class="dislike"><span></span></li>
+          </ul>
+        </div>
+        <div class="item-cosplay">
+          <img  class="img" src="img/cosplay-img-3.jpg" alt="">
+          <ul class="marks">
+            <li class="like "><span></span></li>
+            <li class="dislike"><span></span></li>
+          </ul>
+        </div>
+        <div class="item-cosplay">
+          <img class="img" src="img/cosplay-img-3.jpg" alt="">
+          <ul class="marks">
+            <li class="like active"><span></span></li>
+            <li class="dislike"><span></span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <div class="sm-cosplay cosplay-div">
+      <p class="title-cosplay">Лучшие за день</p>
+      <div class="cosplay-list-one">
+        <div class="item-cosplay">
+          <img class="img" src="img/cosplay-img-4.jpg" alt="">
+          <ul class="marks">
+            <li class="like "><span></span></li>
+            <li class="dislike"><span></span></li>
+          </ul>
+        </div>
+        <div class="item-cosplay">
+          <img  class="img" src="img/cosplay-img-4.jpg" alt="">
+          <ul class="marks">
+            <li class="like "><span></span></li>
+            <li class="dislike "><span></span></li>
+          </ul>
+        </div>
+        <div class="item-cosplay">
+          <img class="img" src="img/cosplay-img-4.jpg" alt="">
+          <ul class="marks">
+            <li class="like "><span></span></li>
+            <li class="dislike"><span></span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+-->
+  
+  
+  <div class="best-cosplay cosplay-div">
+    <p class="title-cosplay">Какая лучше?</p>
+    <div class="cosplay-list-three">
+      <div class="item-cosplay">
+        <img class="img" src="img/cosplay-img-5.png" alt="">
+        <div class="best-point">
+          <span class="like"></span>
+        </div>
+      </div>
+      <div class="item-cosplay">
+        <img class="img" src="img/cosplay-img-6.png" alt="">
+        <div class="best-point">
+          <span class="like"></span>
+        </div>
+      </div>
+      <div class="item-cosplay">
+        <img class="img" src="img/cosplay-img-7.png" alt="">
+        <div class="best-point">
+          <span class="like"></span>
+        </div>
+      </div>
+      <div class="item-cosplay">
+        <img class="img" src="img/cosplay-img-6.png" alt="">
+        <div class="best-point">
+          <span class="like"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>
+ 
+<footer>
+  <div class="container clearfix">
+    <div class="logo-footer">
+      <a href="" class="logo">
+        <img class="d-only" src="img/Z11-logo-dark.png" alt="">
+        <img class="l-only" src="img/Z11-logo-light.png" alt="">
+      </a>
+    </div>
+    
+    <ul class="menu-footer clearfix">
+      <li class="active"><a href="">Главная</a></li>
+      <li><a href="">Инфо</a></li>
+      <li><a href="#modalT" rel="modal:open">Правила</a></li>
+    </ul>
+    
+    <ul class="footer-info">
+      <li class="li-f">Powered by <span class="red">EraSoft</span></li>
+      <li>Все права защищены <span class="green">(с)2020</span></li>
+      <li>
+        <p><span class="green"><i class="far fa-envelope"></i></span>Info@z11.live</p>
+        <p><span class="red"><i class="far fa-envelope"></i></span>admin@z11.live</p>
+      </li>
+      <li>
+        <p><span class="green">Design</span>: krisemka7@gmail.com</p>
+        <p><span class="red">Layout</span>: webden41k@gmail.com</p>
+      </li>
+    </ul>
+    
+  </div>
+</footer>
+ 
+  
+<script src="js/jquery-3.1.1.min.js"></script>  
+<script src="js/jquery.mousewheel.js"></script>  
+<script src="js/jquery.jscrollpane.min.js"></script>  
+<script src="js/slick.min.js"></script>  
+<script src="js/jquery.modal.min.js"></script>  
+<script src="js/script.js"></script>  
+
+</body>
+</html>

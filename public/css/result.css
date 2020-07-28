@@ -1,0 +1,38 @@
+.result-Btn { background: #f9f8f8; display: block; margin-bottom: 10px; line-height: 60px; font-family: "Roboto-Bold"; font-size: 18px; text-align: center; color: #2a2a2a; text-decoration: none; border-radius: 10px; border: 1px solid #f4f2f2; }
+.result-Btn:hover { color: #c3052e; border-color: #c3052e; }
+
+.result-slider { width: calc(74% - 60px); min-width: 1338px; float: left; min-height: 689px; position: relative; margin: 0 30px; }
+.result-slider .slick-slide { outline: none; }
+.result-slider .slick-slide img { display: inline; }
+.result-slider .result-block { position: relative; }
+.result-slider .result-block.today .result-title p { background: #059aa5; color: #fff; }
+.result-slider .result-block.today .result-title p span { color: #fff; }
+.result-slider .result-block.active .result-title p { background: #059aa5; color: #fff; }
+.result-slider .match-list-info { max-width: 305px; margin-left: 5px; }
+.result-slider .match-list-info li:last-child { margin-bottom: 0; }
+.result-slider .scroll-pane { max-width: 332px; max-height: 680px; outline: none; }
+.result-slider .jspVerticalBar { right: 1px; }
+.result-slider .result-title { color: #2a2a2a; font-size: 18px; text-decoration: none; font-family: "Roboto"; text-transform: capitalize; text-align: center; max-width: 305px; margin-left: 5px; }
+.result-slider .result-title p { background: #ececec; width: 100%; border-top-left-radius: 10px; border-top-right-radius: 10px; line-height: 33px; height: 43px; font-size: 16px; text-align: center; margin-top: 1px; box-shadow: 0px 0px 2px 0px rgba(18, 18, 18, 0.26); }
+.result-slider .result-title p span { font-family: "Roboto-Bold"; color: #d53901; font-size: 18px; }
+.result-slider .slick-arrow { display: block; height: 689px; width: 30px; position: absolute; outline: none; font-size: 0; top: -5px; border: none; cursor: pointer; z-index: 3; }
+.result-slider .slick-prev { background: url(../img/result-left.png); background-position: left 30px top 0; left: -30px; }
+.result-slider .slick-next { background: url(../img/result-right.png); background-position: left 0px top 0; right: -30px; }
+
+.side-calend { width: calc(100% - 1399px); float: left; }
+.side-calend .datepicker { width: calc(100% - 5px); overflow: hidden; border-radius: 10px; margin-left: 5px; box-shadow: 0px 0px 6.8px 1.2px rgba(42, 42, 42, 0.33); }
+.side-calend .datepicker table { margin: 0 30px; width: calc(100% - 60px); position: relative; }
+.side-calend .datepicker .ui-datepicker-inline { width: 100%; height: 680px; border: none; padding: 0; background: #f9f8f8; }
+.side-calend .datepicker .ui-datepicker-title { color: #2a2a2a; font-size: 18px; font-family: "Roboto-Bold"; line-height: 115px; text-transform: uppercase; }
+.side-calend .datepicker .ui-datepicker-header { height: 115px; padding: 0; border: none; background: #f9f8f8; }
+.side-calend .datepicker .ui-datepicker .ui-datepicker-prev { left: 55px; background: url(../img/calend-prev.png); }
+.side-calend .datepicker .ui-datepicker .ui-datepicker-next { right: 55px; background: url(../img/calend-next.png); }
+.side-calend .datepicker .ui-datepicker .ui-datepicker-prev, .side-calend .datepicker .ui-datepicker .ui-datepicker-next { top: 50%; margin-top: -15px; width: 30px; height: 30px; background-position: center center; background-repeat: no-repeat; cursor: pointer; }
+.side-calend .datepicker .ui-datepicker .ui-datepicker-prev:hover, .side-calend .datepicker .ui-datepicker .ui-datepicker-next:hover { border: none; }
+.side-calend .datepicker .ui-datepicker-calendar thead:after { content: ""; display: block; width: 30px; height: 85px; background: linear-gradient(180deg, #ececec 0%, #f9f8f8 50%); position: absolute; right: -30px; top: 0; }
+.side-calend .datepicker .ui-datepicker-calendar thead:before { content: ""; display: block; width: 30px; height: 85px; background: linear-gradient(180deg, #ececec 0%, #f9f8f8 50%); position: absolute; left: -30px; top: 0; }
+.side-calend .datepicker .ui-datepicker-calendar thead tr { height: 85px; line-height: 55px; background: linear-gradient(180deg, #ececec 0%, #f9f8f8 50%); }
+.side-calend .datepicker .ui-datepicker-calendar thead tr th { padding: 0; color: #d53901; font-family: "Roboto-Bold"; font-size: 18px; }
+.side-calend .datepicker .ui-state-default { display: block; border-radius: 50%; height: 50px; width: 50px; padding: 0; margin: 10px auto; line-height: 50px; background: none; border: none; color: #2a2a2a; font-family: "Roboto-Light"; font-size: 18px; text-align: center; }
+.side-calend .datepicker .ui-state-default.ui-state-active { background: #059aa5; color: #ffffff; font-family: "Roboto-Bold"; }
+.side-calend .datepicker .ui-datepicker-today a { background: #3f3f44; font-family: "Roboto-Light"; color: #fff; }

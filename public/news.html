@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Z11 Новости</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/jquery.jscrollpane.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/jquery.modal.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/result.css">
+  <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+
+<div id="modalW" class="modal modal-wait">
+  <p class="title">В разработке</p>
+  <a href="#" class="closeBtn" rel="modal:close">Жду</a>
+</div>
+
+<div id="modalT" class="modal">
+  <p class="titleTwo">ПОЛЬЗОВАТЕЛЬСКОЕ СОГЛАШЕНИЕ <span class="right">редакция от 20.20.20202</span></p>
+  <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.</p>
+  <p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу показывает, как много веб-страниц всё ещё дожидаются своего настоящего рождения. За прошедшие годы текст Lorem Ipsum получил много версий. Некоторые версии появились по ошибке, некоторые - намеренно (например, юмористические варианты).</p>
+  <p>Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов в Lorem Ipsum, "consectetur", и занялся его поисками в классической латинской литературе. В результате он нашёл неоспоримый первоисточник Lorem Ipsum в разделах 1.10.32 и 1.10.33 книги "de Finibus Bonorum et Malorum" ("О пределах добра и зла"), написанной Цицероном в 45 году н.э. Этот трактат по теории этики был очень популярен в эпоху Возрождения. Первая строка Lorem Ipsum, "Lorem ipsum dolor sit amet..", происходит от одной из строк в разделе 1.10.32</p>
+  <p>Классический текст Lorem Ipsum, используемый с XVI века, приведён ниже. Также даны разделы 1.10.32 и 1.10.33 "de Finibus Bonorum et Malorum" Цицерона и их английский перевод, сделанный H. Rackham, 1914 год.</p>
+  <p>Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь. Если вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите какой-нибудь шутки, скрытой в середине абзаца. Также все другие известные генераторы Lorem Ipsum используют один и тот же текст, который они просто повторяют, пока не достигнут нужный объём. Это делает предлагаемый здесь генератор единственным настоящим Lorem Ipsum генератором.</p>
+</div>
+
+
+
+
+<header>
+  <div class="container">
+   
+    <div class="nameSite">
+      <a href="" class="logo">
+        <img class="d-only" src="img/Z11-logo-dark.png" alt="">
+        <img class="l-only" src="img/Z11-logo-light.png" alt="">
+      </a>
+    </div>
+   
+    <div class="game-menu">
+      <ul class="clearfix">
+        <li>
+          <a href="#modalW" rel="modal:open" class="csLink">
+            <img class="l-only" src="img/csgo-icon-gr.png" alt="">
+            <img class="d-only" src="img/csgo-icon-dark.png" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="#" class="dotaLink">
+            <img class="l-only" src="img/dota-icon-white.png" alt="">
+            <img class="d-only" src="img/dota-icon-red.png" alt="">
+          </a>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="header-menu btns-second clerfix">
+      <ul class="clearfix">
+        <li class="info-item btn-sec"><a href="">Косплей</a></li>
+        <li class="info-item btn-sec"><a href="">Новости</a></li>
+      </ul>
+    </div>
+    
+    <div class="sound-switch">
+      <label class="switch" for="switchM">
+        <input type="checkbox" id="switchM"/>
+        <div class="slider round"></div>
+      </label>
+    </div>
+    
+    <div class="theme-switch">
+      <label class="switch" for="switch">
+        <input type="checkbox" id="switch"/>
+        <div class="slider round"></div>
+      </label>
+    </div>
+    
+    <div class="header-search">
+      <div class="form-search-h">
+        <form action="">
+          <div class="input-div">
+            <input class="input" type="text" placeholder="Найти команду/игрока/героя">
+            <input class="btn" type="button">
+          </div>
+        </form>
+      </div>
+    </div>
+    
+    <div class="header-menu clerfix">
+      <ul class="clearfix">
+        <li class="lang-menu">
+          <div class="current-lang"><img src="img/flag-3.png" alt=""></div>
+          <ul class="drop-langs">
+            <li><a href=""><img src="img/flag-2.png" alt=""></a></li>
+            <li><a href=""><img src="img/flag-2.png" alt=""></a></li>
+          </ul>
+        </li>
+        <li class="info-item"><a href="page-commands.html">Команда</a></li>
+        <li class="info-item"><a href="page-player.html">Игрок</a></li>
+        <li class="info-item"><a href="page-tour.html">Турнир</a></li>
+      </ul>
+    </div>
+    
+    <div class="mobile-menu-btn" onclick="iconFunction(this)"> 
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+    
+    <div class="mobile-menu">
+      <ul>
+        <li class="info-item"><a href="page-commands.html">Команда</a></li>
+        <li class="info-item"><a href="page-player.html">Игрок</a></li>
+        <li class="info-item"><a href="page-tour.html">Турнир</a></li>
+        <li class="lang-menu">
+          <div class="current-lang"><img src="img/flag-3.png" alt=""></div>
+          <ul class="drop-langs">
+            <li><a href=""><img src="img/flag-2.png" alt=""></a></li>
+            <li><a href=""><img src="img/flag-2.png" alt=""></a></li>
+          </ul>
+        </li>
+        <li class="theme-mob">
+          <label class="switch" for="switch-mob">
+            <input type="checkbox" id="switch-mob"/>
+            <div class="slider round"></div>
+          </label>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+ 
+ 
+<div class="content news">
+  <div class="news-wrapper">
+  
+  <div class="news-header">
+    <ul class="l-check-list">
+      <li> 
+        <label class="checkbox-label">
+          <input type="checkbox" checked="checked">
+          <span class="checkbox-name">Rus</span>
+          <span class="checkmark"></span>
+        </label>
+      </li>
+      <li>
+        <label class="checkbox-label">
+          <input type="checkbox" checked="checked">
+          <span class="checkbox-name">Dota2</span>
+          <span class="checkmark"></span>
+        </label>
+      </li>
+      <li>
+        <label class="checkbox-label">
+          <input type="checkbox">
+          <span class="checkbox-name">Cs:go</span>
+          <span class="checkmark"></span>
+        </label>
+      </li>
+    </ul>
+    <a href="" class="c-link">Как это работает?</a>
+    <ul class="r-check-list">
+      <li> 
+        <label class="checkbox-label">
+          <input type="checkbox">
+          <span class="checkbox-name">Eng</span>
+          <span class="checkmark"></span>
+        </label>
+      </li>
+      <li> 
+        <label class="checkbox-label">
+          <input type="checkbox" >
+          <span class="checkbox-name">Dota2</span>
+          <span class="checkmark"></span>
+        </label>
+      </li>
+      <li> 
+        <label class="checkbox-label">
+          <input type="checkbox" checked="checked">
+          <span class="checkbox-name">Cs:go</span>
+          <span class="checkmark"></span>
+        </label>
+      </li>
+    </ul>
+  </div>
+<!--
+    <div class="cyber-col n-col">
+      <div class="title-col">
+        <span class="icon"></span>
+        <p>Киберспортивный ресурс</p>
+        <span class="watch-btn"></span>
+      </div>
+      <ul class="n-col-nav">
+        <li><a href="">Сейчас</a></li>
+        <li><a href="">3 часа</a></li>
+        <li><a href="">Сутки</a></li>
+        <li><a href="" class="active">Неделя</a></li>
+        <li><a href="">Месяц</a></li>
+      </ul>
+      
+      <div class="news-list">
+        <img src="img/news-test1.png" alt="">
+        <img src="img/news-test2.png" alt="">
+        <img src="img/news-test1.png" alt="">
+        <img src="img/news-test2.png" alt="">
+      </div>
+    </div>
+-->
+    <div class="twitter-col n-col">
+      <div class="title-col">
+        <span class="icon"><img src="img/news-icon2.png" alt=""></span>
+        <p>Twitter</p>
+        <span class="watch-btn hidden"></span>
+      </div>
+      <ul class="n-col-nav">
+        <li><a href="">Сейчас</a></li>
+        <li><a href="">3 часа</a></li>
+        <li><a href="" class="active">Сутки</a></li>
+        <li><a href="">Неделя</a></li>
+        <li><a href="">Месяц</a></li>
+      </ul>
+      <div class="news-list">
+        <div class="news-post">
+          <div class="header-post">
+            <div class="left">
+              <div class="img-div">
+                <img src="img/game2-team.png" alt="">
+              </div>
+              <p  class="name-user">Даня Гугунава</p>
+              <p class="login-user">@danil_gugu</p>
+            </div>
+            <div class="right"><span>8</span></div>
+          </div>
+          <div class="content-post">
+            Предлагаю перенести Конституцию в твитте, чтобы ее нельзя было <br> отредактировать.
+          </div>
+          <div class="footer-post">
+            <div class="left">
+              <span class="repost">334</span>
+              <span class="likes">3 307</span>
+            </div>
+            <div class="right">
+              <span class="time-post">Вчера, 18:09</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="news-post">
+          <div class="header-post">
+            <div class="left">
+              <div class="img-div">
+                <img src="img/game2-team.png" alt="">
+              </div>
+              <p  class="name-user">Даня Гугунава</p>
+              <p class="login-user">@danil_gugu</p>
+            </div>
+            <div class="right"><span>8</span></div>
+          </div>
+          <div class="content-post">
+            Предлагаю перенести Конституцию в твитте, чтобы ее нельзя было <br> отредактировать.
+          </div>
+          <div class="footer-post">
+            <div class="left">
+              <span class="repost">334</span>
+              <span class="likes">3 307</span>
+            </div>
+            <div class="right">
+              <span class="time-post">Вчера, 18:09</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="news-post">
+          <div class="header-post">
+            <div class="left">
+              <div class="img-div">
+                <img src="img/game2-team.png" alt="">
+              </div>
+              <p  class="name-user">Даня Гугунава</p>
+              <p class="login-user">@danil_gugu</p>
+            </div>
+            <div class="right"><span>8</span></div>
+          </div>
+          <div class="content-post">
+            Предлагаю перенести Конституцию в твитте, чтобы ее нельзя было <br> отредактировать.
+          </div>
+          <div class="footer-post">
+            <div class="left">
+              <span class="repost">334</span>
+              <span class="likes">3 307</span>
+            </div>
+            <div class="right">
+              <span class="time-post">Вчера, 18:09</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="news-post">
+          <div class="header-post">
+            <div class="left">
+              <div class="img-div">
+                <img src="img/game2-team.png" alt="">
+              </div>
+              <p  class="name-user">Даня Гугунава</p>
+              <p class="login-user">@danil_gugu</p>
+            </div>
+            <div class="right"><span>8</span></div>
+          </div>
+          <div class="content-post">
+            Предлагаю перенести Конституцию в твитте, чтобы ее нельзя было <br> отредактировать.
+          </div>
+          <div class="footer-post">
+            <div class="left">
+              <span class="repost">334</span>
+              <span class="likes">3 307</span>
+            </div>
+            <div class="right">
+              <span class="time-post">Вчера, 18:09</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <div class="telegram-col n-col">
+      <div class="title-col">
+        <span class="icon"><img src="img/news-icon3.png" alt=""></span>
+        <p>Telegram</p>
+        <span class="watch-btn"></span>
+      </div>
+      <ul class="n-col-nav">
+        <li><a href="" class="active">Сейчас</a></li>
+        <li><a href="">3 часа</a></li>
+        <li><a href="">Сутки</a></li>
+        <li><a href="">Неделя</a></li>
+        <li><a href="">Месяц</a></li>
+      </ul>
+      <div class="news-list">
+        <div class="news-post">
+          <div class="header-post">
+            <div class="left">
+              <div class="img-div">
+                <img src="img/game2-team.png" alt="">
+              </div>
+              <p  class="name-user">2ch/Двач</p>
+              <p class="login-user">@dvachannel</p>
+            </div>
+            <div class="right"><span>134</span></div>
+          </div>
+          <div class="content-post">
+            Предлагаю перенести Конституцию в твитте, чтобы ее нельзя было <br> отредактировать.
+          </div>
+          <div class="footer-post">
+            <div class="left">
+              <span class="watch">73 407</span>
+            </div>
+            <div class="right">
+              <span class="time-post">6:00</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="news-post">
+          <div class="header-post">
+            <div class="left">
+              <div class="img-div">
+                <img src="img/game2-team.png" alt="">
+              </div>
+              <p  class="name-user">2ch/Двач</p>
+              <p class="login-user">@dvachannel</p>
+            </div>
+            <div class="right"><span>134</span></div>
+          </div>
+          <div class="content-post">
+            <a href="">Lorem ipsum dolor sit amet</a> <br>
+            Предлагаю перенести Конституцию в твитте, чтобы ее нельзя было <br> отредактировать.
+          </div>
+          <div class="footer-post">
+            <div class="left">
+              <span class="watch">73 407</span>
+            </div>
+            <div class="right">
+              <span class="time-post">6:00</span>
+            </div>
+          </div>
+        </div>
+        <div class="news-post">
+          <div class="header-post">
+            <div class="left">
+              <div class="img-div">
+                <img src="img/game2-team.png" alt="">
+              </div>
+              <p  class="name-user">2ch/Двач</p>
+              <p class="login-user">@dvachannel</p>
+            </div>
+            <div class="right"><span>134</span></div>
+          </div>
+          <div class="content-post">
+            Предлагаю перенести Конституцию в твитте, чтобы ее нельзя было <br> отредактировать.
+          </div>
+          <div class="footer-post">
+            <div class="left">
+              <span class="watch">73 407</span>
+            </div>
+            <div class="right">
+              <span class="time-post">6:00</span>
+            </div>
+          </div>
+        </div>
+        <div class="news-post">
+          <div class="header-post">
+            <div class="left">
+              <div class="img-div">
+                <img src="img/game2-team.png" alt="">
+              </div>
+              <p  class="name-user">2ch/Двач</p>
+              <p class="login-user">@dvachannel</p>
+            </div>
+            <div class="right"><span>134</span></div>
+          </div>
+          <div class="content-post">
+            Предлагаю перенести Конституцию в твитте, чтобы ее нельзя было <br> отредактировать.
+          </div>
+          <div class="footer-post">
+            <div class="left">
+              <span class="watch">73 407</span>
+            </div>
+            <div class="right">
+              <span class="time-post">6:00</span>
+            </div>
+          </div>
+        </div>
+        <div class="news-post">
+          <div class="header-post">
+            <div class="left">
+              <div class="img-div">
+                <img src="img/game2-team.png" alt="">
+              </div>
+              <p  class="name-user">2ch/Двач</p>
+              <p class="login-user">@dvachannel</p>
+            </div>
+            <div class="right"><span>134</span></div>
+          </div>
+          <div class="content-post">
+            Предлагаю перенести Конституцию в твитте, чтобы ее нельзя было <br> отредактировать.
+          </div>
+          <div class="footer-post">
+            <div class="left">
+              <span class="watch">73 407</span>
+            </div>
+            <div class="right">
+              <span class="time-post">6:00</span>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+    <div class="single-scrollbar n-col"></div>
+  </div>
+</div>
+ 
+<footer>
+  <div class="container clearfix">
+    <div class="logo-footer">
+      <a href="" class="logo">
+        <img class="d-only" src="img/Z11-logo-dark.png" alt="">
+        <img class="l-only" src="img/Z11-logo-light.png" alt="">
+      </a>
+    </div>
+    
+    <ul class="menu-footer clearfix">
+      <li class="active"><a href="">Главная</a></li>
+      <li><a href="">Инфо</a></li>
+      <li><a href="#modalT" rel="modal:open">Правила</a></li>
+    </ul>
+    
+    <ul class="footer-info">
+      <li class="li-f">Powered by <span class="red">EraSoft</span></li>
+      <li>Все права защищены <span class="green">(с)2020</span></li>
+      <li>
+        <p><span class="green"><i class="far fa-envelope"></i></span>Info@z11.live</p>
+        <p><span class="red"><i class="far fa-envelope"></i></span>admin@z11.live</p>
+      </li>
+      <li>
+        <p><span class="green">Design</span>: krisemka7@gmail.com</p>
+        <p><span class="red">Layout</span>: webden41k@gmail.com</p>
+      </li>
+    </ul>
+    
+  </div>
+</footer>
+ 
+  
+<script src="js/jquery-3.1.1.min.js"></script>  
+<script src="js/jquery.mousewheel.js"></script>  
+<script src="js/jquery.jscrollpane.min.js"></script>  
+<script src="js/slick.min.js"></script>  
+<script src="js/jquery.modal.min.js"></script>  
+<script src="js/script.js"></script>  
+<script type="text/javascript">
+
+    $('.news-list').jScrollPane({
+      showArrows: true,
+      arrowScrollOnHover: true,
+      verticalGutter: 0,
+      contentWidth: '0px'
+    });
+  
+  
+  $(".news .watch-btn").click(function() {
+    $(this).toggleClass("hidden");
+  });
+
+</script>
+</body>
+</html>

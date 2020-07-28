@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Z11 СТРАНИЦА ИГРОКА</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/jquery.jscrollpane.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/jquery.modal.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+ 
+<div id="modalW" class="modal modal-wait">
+  <p class="title">В разработке</p>
+  <a href="#" class="closeBtn" rel="modal:close">Жду</a>
+</div>
+
+<div id="modalT" class="modal">
+  <p class="titleTwo">ПОЛЬЗОВАТЕЛЬСКОЕ СОГЛАШЕНИЕ <span class="right">редакция от 20.20.20202</span></p>
+  <p>Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.</p>
+  <p>Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу показывает, как много веб-страниц всё ещё дожидаются своего настоящего рождения. За прошедшие годы текст Lorem Ipsum получил много версий. Некоторые версии появились по ошибке, некоторые - намеренно (например, юмористические варианты).</p>
+  <p>Многие думают, что Lorem Ipsum - взятый с потолка псевдо-латинский набор слов, но это не совсем так. Его корни уходят в один фрагмент классической латыни 45 года н.э., то есть более двух тысячелетий назад. Ричард МакКлинток, профессор латыни из колледжа Hampden-Sydney, штат Вирджиния, взял одно из самых странных слов в Lorem Ipsum, "consectetur", и занялся его поисками в классической латинской литературе. В результате он нашёл неоспоримый первоисточник Lorem Ipsum в разделах 1.10.32 и 1.10.33 книги "de Finibus Bonorum et Malorum" ("О пределах добра и зла"), написанной Цицероном в 45 году н.э. Этот трактат по теории этики был очень популярен в эпоху Возрождения. Первая строка Lorem Ipsum, "Lorem ipsum dolor sit amet..", происходит от одной из строк в разделе 1.10.32</p>
+  <p>Классический текст Lorem Ipsum, используемый с XVI века, приведён ниже. Также даны разделы 1.10.32 и 1.10.33 "de Finibus Bonorum et Malorum" Цицерона и их английский перевод, сделанный H. Rackham, 1914 год.</p>
+  <p>Есть много вариантов Lorem Ipsum, но большинство из них имеет не всегда приемлемые модификации, например, юмористические вставки или слова, которые даже отдалённо не напоминают латынь. Если вам нужен Lorem Ipsum для серьёзного проекта, вы наверняка не хотите какой-нибудь шутки, скрытой в середине абзаца. Также все другие известные генераторы Lorem Ipsum используют один и тот же текст, который они просто повторяют, пока не достигнут нужный объём. Это делает предлагаемый здесь генератор единственным настоящим Lorem Ipsum генератором.</p>
+</div>
+
+ 
+<header>
+  <div class="container">
+   
+    <div class="nameSite">
+      <a href="" class="logo">
+        <img class="d-only" src="img/Z11-logo-dark.png" alt="">
+        <img class="l-only" src="img/Z11-logo-light.png" alt="">
+      </a>
+    </div>
+   
+    <div class="game-menu">
+      <ul class="clearfix">
+        <li>
+          <a href="#modalW" rel="modal:open" class="csLink">
+            <img class="l-only" src="img/csgo-icon-gr.png" alt="">
+            <img class="d-only" src="img/csgo-icon-dark.png" alt="">
+          </a>
+        </li>
+        <li>
+          <a href="#" class="dotaLink">
+            <img class="l-only" src="img/dota-icon-white.png" alt="">
+            <img class="d-only" src="img/dota-icon-red.png" alt="">
+          </a>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="theme-switch">
+      <label class="switch" for="switch">
+        <input type="checkbox" id="switch"/>
+        <div class="slider round"></div>
+      </label>
+    </div>
+    
+    <div class="header-search">
+      <div class="form-search-h">
+        <form action="">
+          <div class="input-div">
+            <input class="input" type="text" placeholder="Найти команду/игрока/героя">
+            <input class="btn" type="button">
+          </div>
+        </form>
+      </div>
+    </div>
+    
+    <div class="header-menu clerfix">
+      <ul class="clearfix">
+        <li class="info-item"><a href="index.html">Лайв</a></li>
+        <li class="lang-menu">
+          <div class="current-lang"><img src="img/flag-3.png" alt=""></div>
+          <ul class="drop-langs">
+            <li><a href=""><img src="img/flag-2.png" alt=""></a></li>
+            <li><a href=""><img src="img/flag-2.png" alt=""></a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    
+    <div class="mobile-menu-btn" onclick="iconFunction(this)"> 
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
+    
+    <div class="mobile-menu">
+      <ul>
+        <li class="info-item"><a href="index.html">Лайв</a></li>
+        <li class="lang-menu">
+          <div class="current-lang"><img src="img/flag-3.png" alt=""></div>
+          <ul class="drop-langs">
+            <li><a href=""><img src="img/flag-2.png" alt=""></a></li>
+            <li><a href=""><img src="img/flag-2.png" alt=""></a></li>
+          </ul>
+        </li>
+        <li class="theme-mob">
+          <label class="switch" for="switch-mob">
+            <input type="checkbox" id="switch-mob"/>
+            <div class="slider round"></div>
+          </label>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+ 
+ 
+<div class="content content-page">
+  
+  <div class="page-left">
+   
+   
+    <div class="team-div player-div">
+     
+      <div class="t-logo">
+        <div class="logo-wrap">
+          <img src="img/players/trainer2.png" alt="">
+        </div>
+      </div>
+      
+      <div class="t-info">
+        <div class="left-info">
+          <p class="p-name"><a href="">Crystallize</a></p>
+          <p class="p-rate">Позиция</p>
+          <p class="p-rate"><span>38</span></p>
+          <p class="p-cash">$ 72 200</p>
+          <a href="" class="btn-to-info">Инфо</a>
+        </div>
+        <div class="right-info">
+          <div class="t-command">
+            <img src="img/team1-logo.png" alt="">
+          </div>
+          <div class="t-country">
+            <img src="img/flag1.png" alt="">
+          </div>
+        </div>
+      </div>
+      
+      <div class="t-last-command scroll-pane">
+        <ul>
+          <li class="first-li"><span>Предыдущие команды:</span></li>
+          <li>
+            <div class="comnd-div">
+              <img src="img/last-com1.png" alt="">
+            </div>
+            <p class="win-r"> Winrate: <span>57%</span></p>
+            <p class="date-r"><span>11.10.2019</span></p>
+          </li>
+          
+          <li>
+            <div class="comnd-div">
+              <img src="img/last-com2.png" alt="">
+            </div>
+            <p class="win-r"> Winrate: <span>39%</span></p>
+            <p class="date-r"><span>07.11.2019</span></p>
+          </li>
+          
+          <li>
+            <div class="comnd-div">
+              <img src="img/last-com1.png" alt="">
+            </div>
+            <p class="win-r"> Winrate: <span>57%</span></p>
+            <p class="date-r"><span>11.10.2019</span></p>
+          </li>
+          
+          <li>
+            <div class="comnd-div">
+              <img src="img/last-com2.png" alt="">
+            </div>
+            <p class="win-r"> Winrate: <span>39%</span></p>
+            <p class="date-r"><span>07.11.2019</span></p>
+          </li>
+          
+        </ul>
+      </div>
+      
+      <div class="liner"></div>
+      
+      <div class="last-patch">
+       
+        <div class="filter-patch">
+          <p class="title">Фильтр</p>
+          <p>Фильтр 1</p>
+          <input type="text">
+          <p>Фильтр 2</p>
+          <input type="text">
+          <p>Фильтр 3</p>
+          <input type="text">
+        </div>
+        
+        
+        <ul class="list">
+          <li class="li-item">
+            <p class="wrate">Winrate: <span>57%</span></p>
+            <div class="div-img">
+              
+            </div>
+            <p class="kda">КДА: <span>5/4/3</span></p>
+            <p>ЗВМ: <span>290</span></p>
+            <p>ОВМ: <span>353</span></p>
+          </li>
+          
+          <li class="li-item">
+            <p class="wrate">Winrate: <span>57%</span></p>
+            <div class="div-img">
+              <img src="img/heroes/hero3.png" alt="">
+            </div>
+            <p class="kda">КДА: <span>5/4/3</span></p>
+            <p>ЗВМ: <span>290</span></p>
+            <p>ОВМ: <span>353</span></p>
+          </li>
+          
+          <li class="li-item">
+            <p class="wrate">Winrate: <span>57%</span></p>
+            <div class="div-img">
+              <img src="img/heroes/hero2.png" alt="">
+            </div>
+            <p class="kda">КДА: <span>5/4/3</span></p>
+            <p>ЗВМ: <span>290</span></p>
+            <p>ОВМ: <span>353</span></p>
+          </li>
+          <li class="li-item">
+            <p class="wrate">Winrate: <span>57%</span></p>
+            <div class="div-img">
+              <img src="img/heroes/hero8.png" alt="">
+            </div>
+            <p class="kda">КДА: <span>5/4/3</span></p>
+            <p>ЗВМ: <span>290</span></p>
+            <p>ОВМ: <span>353</span></p>
+          </li>
+          
+          <li class="li-item">
+            <p class="wrate">Winrate: <span>57%</span></p>
+            <div class="div-img">
+              <img src="img/heroes/hero9.png" alt="">
+            </div>
+            <p class="kda">КДА: <span>5/4/3</span></p>
+            <p>ЗВМ: <span>290</span></p>
+            <p>ОВМ: <span>353</span></p>
+          </li>
+          
+          <li class="li-item">
+            <p class="wrate">Winrate: <span>57%</span></p>
+            <div class="div-img">
+              <img src="img/heroes/hero7.png" alt="">
+            </div>
+            <p class="kda">КДА: <span>5/4/3</span></p>
+            <p>ЗВМ: <span>290</span></p>
+            <p>ОВМ: <span>353</span></p>
+          </li>
+        </ul>
+      </div>
+ 
+    </div>
+    
+    
+    <div class="team-games player">
+      <ul>
+       
+        <li>
+          <div class="g-teams">
+            <a href="" class="left-t"><img src="img/pl-img1.png" alt=""></a>
+            <div class="g-count">
+              <span>02:04</span>  
+            </div>
+            <a href="" class="right-t"><img src="img/g-team1.png" alt=""></a>
+          </div>
+          
+          <div class="g-liga g-hero">
+            <div class="hero-img"><img src="img/pl-hero1.png" alt=""></div> 
+          </div>
+          
+          <div class="g-date">
+            <span class="day">5/4/3</span>
+            <span class="clock">290/353</span>
+          </div>
+        </li>
+        
+        <li class="win">
+          <div class="g-teams">
+            <a href="" class="left-t"><img src="img/team-games-logo1.png" alt=""></a>
+            <div class="g-count">
+              <span>02:04</span>  
+            </div>
+            <a href="" class="right-t"><img src="img/g-team3.png" alt=""></a>
+          </div>
+          
+          <div class="g-liga g-hero">
+            <div class="hero-img"><img src="img/pl-hero2.png" alt=""></div> 
+          </div>
+          
+          <div class="g-date">
+            <span class="day">5/4/3</span>
+            <span class="clock">290/353</span>
+          </div>
+        </li>
+        
+        <li class="win">
+          <div class="g-teams">
+            <a href="" class="left-t"><img src="img/team-games-logo2.png" alt=""></a>
+            <div class="g-count">
+              <span>07:04</span>  
+            </div>
+            <a href="" class="right-t"><img src="img/g-team5.png" alt=""></a>
+          </div>
+          
+          <div class="g-liga g-hero">
+            <div class="hero-img"><img src="img/pl-hero3.png" alt=""></div> 
+          </div>
+          
+          <div class="g-date">
+            <span class="day">5/4/3</span>
+            <span class="clock">290/353</span>
+          </div>
+        </li>
+        
+        <li>
+          <div class="g-teams">
+            <a href="" class="left-t"><img src="img/team-games-logo4.png" alt=""></a>
+            <div class="g-count">
+              <span>02:04</span>  
+            </div>
+            <a href="" class="right-t"><img src="img/g-team7.png" alt=""></a>
+          </div>
+          
+          <div class="g-liga g-hero">
+            <div class="hero-img"><img src="img/pl-hero4.png" alt=""></div> 
+          </div>
+          
+          <div class="g-date">
+            <span class="day">5/4/3</span>
+            <span class="clock">290/353</span>
+          </div>
+        </li>
+        
+        <li class="los">
+          <div class="g-teams">
+            <a href="" class="left-t"><img src="img/team-games-logo5.png" alt=""></a>
+            <div class="g-count">
+              <span>02:04</span>  
+            </div>
+            <a href="" class="right-t"><img src="img/g-team9.png" alt=""></a>
+          </div>
+          
+          <div class="g-liga g-hero">
+            <div class="hero-img"><img src="img/pl-hero5.png" alt=""></div> 
+          </div>
+          
+          <div class="g-date">
+            <span class="day">5/4/3</span>
+            <span class="clock">290/353</span>
+          </div>
+        </li>
+        
+        <li>
+          <div class="g-teams">
+            <a href="" class="left-t"><img src="img/team-games-logo6.png" alt=""></a>
+            <div class="g-count">
+              <span>02:04</span>  
+            </div>
+            <a href="" class="right-t"><img src="img/g-team11.png" alt=""></a>
+          </div>
+          
+          <div class="g-liga g-hero">
+            <div class="hero-img"><img src="img/pl-hero6.png" alt=""></div> 
+          </div>
+          
+          <div class="g-date">
+            <span class="day">5/4/3</span>
+            <span class="clock">290/353</span>
+          </div>
+        </li>
+       
+      </ul>
+    </div>
+    
+  </div>
+  
+  
+  <div class="page-right">
+<!--
+    <div class="form-search">
+      <form action="">
+        <div class="input-div">
+          <input class="input" type="text" placeholder="Найти команду">
+          <input class="btn" type="button">
+        </div>
+      </form>
+      
+      <form action="">
+        <div class="input-div">
+          <input class="input" type="text" placeholder="Найти игрока">
+          <input class="btn" type="button">
+        </div>
+      </form>
+      
+      <form action="" class="last-form">
+        <div class="input-div">
+          <input class="input" type="text" placeholder="Найти героя">
+          <input class="btn" type="button">
+        </div>
+      </form>
+    </div>
+-->
+    
+    <div class="table-match-right">
+      <ul class="head-menu">
+        <li class="active"><a href="">Лайв</a></li>
+        <li><a href="">Будущие</a></li>
+        <li><a href="">Прошедшие</a></li>
+      </ul>
+      
+      <div class="table-div scroll-pane">
+        <ul>
+          <li>
+            <div class="img-c">
+              <img src="img/tour1.png" alt="">
+            </div>
+            <div class="name-c">
+              <a href="">MDL Chengdu Major</a>
+            </div>
+            <div class="date-c">
+              <span>16.11.2019 - 24.11.2019</span>
+            </div>
+            <div class="rate-c">
+              <div class="rate-div">
+                <span class="rate-num">5</span>
+                <div class="rate-line">
+                  <span class="active" style="width: 100%;"></span>
+                </div>
+              </div>
+            </div>
+          </li>
+          
+          <li>
+            <div class="img-c">
+              <img src="img/tour2.png" alt="">
+            </div>
+            <div class="name-c">
+              <a href="">ESL Pro League Season 10. Европа</a>
+            </div>
+            <div class="date-c">
+              <span>08.10.2019 - 18.11.2019</span>
+            </div>
+            <div class="rate-c">
+              <div class="rate-div">
+                <span class="rate-num">5</span>
+                <div class="rate-line">
+                  <span class="active" style="width: 100%;"></span>
+                </div>
+              </div>
+            </div>
+          </li>
+          
+          <li>
+            <div class="img-c">
+              <img src="img/tour3.png" alt="">
+            </div>
+            <div class="name-c">
+              <a href="">PUBG Global Championship 2019</a>
+            </div>
+            <div class="date-c">
+              <span>16.11.2019 - 24.11.2019</span>
+            </div>
+            <div class="rate-c">
+              <div class="rate-div">
+                <span class="rate-num">4</span>
+                <div class="rate-line">
+                  <span class="active" style="width: 80%;"></span>
+                </div>
+              </div>
+            </div>
+          </li>
+          
+          <li>
+            <div class="img-c">
+              <img src="img/tour4.png" alt="">
+            </div>
+            <div class="name-c">
+              <a href="">China Dota2 Development League Season 2</a>
+            </div>
+            <div class="date-c">
+              <span>14.10.2019 - 23.02.2020</span>
+            </div>
+            <div class="rate-c">
+              <div class="rate-div">
+                <span class="rate-num">3</span>
+                <div class="rate-line">
+                  <span class="active" style="width: 60%;"></span>
+                </div>
+              </div>
+            </div>
+          </li>
+          
+          <li>
+            <div class="img-c">
+              <img src="img/tour5.png" alt="">
+            </div>
+            <div class="name-c">
+              <a href="">DOTA Summit 11</a>
+            </div>
+            <div class="date-c">
+              <span>07.11.2019 - 11.11.2019</span>
+            </div>
+            <div class="rate-c">
+              <div class="rate-div">
+                <span class="rate-num">3</span>
+                <div class="rate-line">
+                  <span class="active" style="width: 60%;"></span>
+                </div>
+              </div>
+            </div>
+          </li>
+          
+          <li>
+            <div class="img-c">
+              <img src="img/tour6.png" alt="">
+            </div>
+            <div class="name-c">
+              <a href="">ESEA Season 32: Premier Division — Europe</a>
+            </div>
+            <div class="date-c">
+              <span>09.09.2019 - 15.12.2019</span>
+            </div>
+            <div class="rate-c">
+              <div class="rate-div">
+                <span class="rate-num">2</span>
+                <div class="rate-line">
+                  <span class="active" style="width: 40%;"></span>
+                </div>
+              </div>
+            </div>
+          </li>
+          
+          <li>
+            <div class="img-c">
+              <img src="img/tour2.png" alt="">
+            </div>
+            <div class="name-c">
+              <a href="">ESL Pro League Season 10. Европа</a>
+            </div>
+            <div class="date-c">
+              <span>08.10.2019 - 18.11.2019</span>
+            </div>
+            <div class="rate-c">
+              <div class="rate-div">
+                <span class="rate-num">5</span>
+                <div class="rate-line">
+                  <span class="active" style="width: 100%;"></span>
+                </div>
+              </div>
+            </div>
+          </li>
+          
+          <li>
+            <div class="img-c">
+              <img src="img/tour3.png" alt="">
+            </div>
+            <div class="name-c">
+              <a href="">PUBG Global Championship 2019</a>
+            </div>
+            <div class="date-c">
+              <span>16.11.2019 - 24.11.2019</span>
+            </div>
+            <div class="rate-c">
+              <div class="rate-div">
+                <span class="rate-num">4</span>
+                <div class="rate-line">
+                  <span class="active" style="width: 80%;"></span>
+                </div>
+              </div>
+            </div>
+          </li>
+          
+          <li>
+            <div class="img-c">
+              <img src="img/tour4.png" alt="">
+            </div>
+            <div class="name-c">
+              <a href="">China Dota2 Development League Season 2</a>
+            </div>
+            <div class="date-c">
+              <span>14.10.2019 - 23.02.2020</span>
+            </div>
+            <div class="rate-c">
+              <div class="rate-div">
+                <span class="rate-num">3</span>
+                <div class="rate-line">
+                  <span class="active" style="width: 60%;"></span>
+                </div>
+              </div>
+            </div>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+    
+    
+    <ul class="big-banner">
+      <li>
+        <a href="">
+          <img class="l-only" src="img/big-banner.png" alt="">
+          <img class="d-only" src="img/big-banner-dark.png" alt="">
+        </a>
+      </li>
+      <li>
+        <a href="">
+          <img class="l-only" src="img/big-banner.png" alt="">
+          <img class="d-only" src="img/big-banner-dark.png" alt="">
+        </a>
+      </li>
+    </ul>
+    
+  </div>
+  
+</div>
+ 
+ 
+  
+<footer>
+  <div class="container clearfix">
+    <div class="logo-footer">
+      <a href="" class="logo">
+        <img class="d-only" src="img/Z11-logo-dark.png" alt="">
+        <img class="l-only" src="img/Z11-logo-light.png" alt="">
+      </a>
+    </div>
+    
+    <ul class="menu-footer clearfix">
+      <li class="active"><a href="">Главная</a></li>
+      <li><a href="">Инфо</a></li>
+      <li><a href="#modalT" rel="modal:open">Правила</a></li>
+    </ul>
+    
+    <ul class="footer-info">
+      <li class="li-f">Powered by <span class="red">EraSoft</span></li>
+      <li>Все права защищены <span class="green">(с)2020</span></li>
+      <li>
+        <p><span class="green"><i class="far fa-envelope"></i></span>Info@z11.live</p>
+        <p><span class="red"><i class="far fa-envelope"></i></span>admin@z11.live</p>
+      </li>
+      <li>
+        <p><span class="green">Design</span>: krisemka7@gmail.com</p>
+        <p><span class="red">Layout</span>: webden41k@gmail.com</p>
+      </li>
+    </ul>
+    
+  </div>
+</footer>
+  
+<script src="js/jquery-3.1.1.min.js"></script>  
+<script src="js/jquery.mousewheel.js"></script>  
+<script src="js/jquery.jscrollpane.min.js"></script>  
+<script src="js/slick.min.js"></script>  
+<script src="js/jquery.modal.min.js"></script>  
+<script src="js/script.js"></script>  
+</body>
+</html>
